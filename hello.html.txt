@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "UTF 8.0">
+<meta name = "viewport" content = "width = device - width initial scale = 1.0">
+
+<title> FORM </title>
+
+</head>
+
+<form action = "submit.html" method = "post"></form>
+<body>
+
+<center><h1>GitHub Registration form </h1></center>
+
+<p>
+<label for ="email">Email Address</label>
+<input type ="email" name = "email" placeholder = "enter your email address" required>
+</p>
+
+<br>
+
+<p>
+<label for = "passward">Passward</label>
+<input type = "text" name = "passward"placeholder ="enter passward" required>
+</p>
+
+<br>
+
+<p>
+<label for = "Name">full name</label>
+<input type = "text" name =" text" placeholder = "enter your full name" required>
+</p>
+
+<br>
+
+<p>
+<label for = "class">Enter your class</label>
+<textarea
+  id ="class"
+  rows = "2"
+  column = "2"
+</textarea>
+<br>
+
+<input type = select>
+<option> CSE 28 </option>
+<option> CSE 29 </option>
+<option> CSE 30 </option>
+<option> CSE 27 </option>
+</select>
+</p>
+<br>
+
+
+</p>
+<br>
+
+<p>
+<label for= "GitHub link">Enter your Git hub repo link</label>
+<textarea 
+   id ="link"
+   rows = "3"
+   columns = "3"
+</textarea>
+
+</p>
+
+</body>
+</html>
+
+
