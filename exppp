@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Booking Form</title>
+</head>
+<body>
+    <h1 align="center">Flight Booking Form</h1>
+
+    <form align="center">
+        <p>
+            Full Name: 
+            <input type="text" name="fullname" required>
+        </p>
+
+        <p>
+            Email: 
+            <input type="email" name="email" required>
+        </p>
+
+        <p>
+            Phone: 
+            <input type="tel" name="phone" required>
+        </p>
+
+        <p>
+            From: 
+            <input type="text" name="from" placeholder="Enter Departure City" required>
+        </p>
+
+        <p>
+            To: 
+            <input type="text" name="to" placeholder="Enter Destination City" required>
+        </p>
+
+        <p>
+            Departure Date: 
+            <input type="date" name="departure" required>
+        </p>
+
+        <p>
+            Return Date: 
+            <input type="date" name="return">
+        </p>
+
+        <p>
+            Travel Class: 
+            <select name="class">
+                <option>Economy</option>
+                <option>Premium Economy</option>
+                <option>Business</option>
+                <option>First Class</option>
+            </select>
+        </p>
+
+        <p>
+            Number of Passengers: 
+            <input type="number" name="passengers" min="1" required>
+        </p>
+
+        <p>
+            Special Requests:<br>
+            <textarea name="requests" rows="4" cols="40" placeholder="E.g., window seat, vegetarian meal"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Book Flight">
+            <input type="reset" value="Reset Form">
+        </p>
+    </form>
+</body>
+</html>
