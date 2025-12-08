@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Responsive Product Grid</title>
+ <style>
+
+
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ background: #ceb1c2;
+ padding:50px;
+ }
+
+
+ h2 {
+ text-align: center;
+ margin-bottom: 90px;
+ }
+
+
+ /* Product grid */
+ .grid {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+ gap: 20px;
+ }
+
+
+ /* Product card */
+ .card {
+ background: #fff;
+ border-radius: 8px;
+ box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+ padding: 16px;
+ text-align: center;
+ }
+
+ .card img {
+ width:90%;
+ height: 150px;
+ object-fit:fill;
+ border-radius: 10px;
+ margin-bottom: 10px;
+ }
+
+
+ .card h3 {
+ font-size: 18px;
+ margin: 8px 0;
+ }
+
+ .card p {
+ font-size: 14px;
+ color: #555;
+ margin: 4px 0;
+ }
+
+ .price {
+ font-weight: bold;
+ color: rgba(31, 31, 215, 0.733);
+ }
+
+ /* Responsive Breakpoints */
+ @media (max-width: 1024px) 
+ {
+ .grid {
+ grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */}
+ }
+
+ @media (max-width: 600px) {
+ .grid {
+ grid-template-columns: 1fr; /* 1 column for mobile */
+ }
+
+
+ 
+
+
+
+ }
+ </style>
+  
+
+</head>
+<body>
+ <h2>Responsive Product Grid</h2>
+
+
+<div class="grid">
+
+
+ <div class="card">
+ <img src="https://www.leafstudios.in/cdn/shop/files/1_a43c5e0b-3a47-497d-acec-b4764259b10e_800x.png?v=1750486829" alt="Product 1">
+ <h3>Wireless Headphones</h3>
+ <p>High-quality item with great features.</p>
+ <p class="price">₹2,999</p>
+ </div>
+
+
+ <div class="card">
+ <img src="https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/29754690/2024/6/24/aaa5f2e3-6936-4d68-9d0a-6a4fbc52f8bd1719221032889JewelsGalaxySetOf21Gold-PlatedStackableRings1.jpg      " alt="Product 2">
+ <h3>Rings</h3>
+ <p>Durable and stylish for daily use.</p>
+ <p class="price">₹299</p>
+ </div>
+
+
+ <div class="card">
+ <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/sling-bag/8/i/w/women-sling-bag-trendy-designer-sling-bag-for-women-1-5-woman-original-imahff5hetxdrutz.jpeg?q=90 " alt="Product 3">
+ <h3>Trendy designer Sling bag</h3>
+ <p>Lightweight and comfortable.</p>
+ <p class="price">₹999</p>
+ </div>
+
+
+
+ <div class="card">
+ <img src= https://5.imimg.com/data5/SELLER/Default/2024/7/434207847/SG/EQ/GN/4320526/61zautkp1ql-sl1098-500x500.jpg alt = "Product 4">
+ <h3> Hair bow clips  </h3>
+ <p> Experience luxurious comfort with our silky satin hair bows clips with long tail   </p>
+ <p class="price">₹999</p>
+ </div>
+
+
+ </div>
+</body>

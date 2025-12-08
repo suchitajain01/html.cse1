@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+   <meta charset="UTF-8"> 
+   <meta name="viewport" content="width=device-width, 
+initial-scale=1.0"> 
+   <title>Meesho</title> 
+   <style> 
+       * { 
+           margin: 0; 
+           padding: 0; 
+           box-sizing: border-box; 
+       } 
+       body { 
+           font-family: Arial, sans-serif; 
+           background-color: #f5f5f5; 
+       } 
+       .header { 
+           background-color: #333; 
+           color: white; 
+           padding: 15px 40px;  
+           display: flex; 
+           justify-content: space-between; 
+           align-items: center; 
+       } 
+       .logo { 
+           font-size: 24px; 
+           font-weight: bold; 
+       } 
+       .nav { 
+           display: flex; 
+           gap: 25px; 
+       }
+         .nav a { 
+           color: white; 
+           text-decoration: none; 
+           font-size: 14px; 
+       } 
+       .nav a:hover { 
+           text-decoration: underline; 
+       } 
+       .header-right { 
+           display: flex; 
+           gap: 20px; 
+           align-items: center; 
+           font-size: 14px; 
+       } 
+       .header-right a { 
+           color: white; 
+           text-decoration: none; 
+       } 
+       .content { 
+           background-color: white; 
+           padding: 40px; 
+           margin: 20px; 
+           border: 1px solid #ddd; 
+       } 
+       .content h1 { 
+           font-size: 28px; 
+           margin-bottom: 10px; 
+           color: #333; 
+       } 
+       .content p { 
+           font-size: 16px; 
+           color: #666; 
+       } 
+       @media (max-width: 768px) { 
+           .header { 
+               flex-direction: column; 
+               gap: 15px;} 
+                .nav { 
+               flex-wrap: wrap; 
+           } 
+       } 
+   </style> 
+</head> 
+<body> 
+   <div class="header"> 
+       <div class="logo"> Meesho</div> 
+       <div class="nav"> 
+           <a href="#">Home</a> 
+           <a href="#">Products</a> 
+           <a href="#">Categories</a> 
+           <a href="#">Deals</a> 
+           <a href="#">Contact</a> 
+       </div> 
+       <div class="header-right"> 
+           <a href="#">Cart (4)</a> 
+           <a href="#">Login</a> 
+       </div> 
+   </div> 
+ 
+   <div class="content"> 
+       <h1>Welcome to Meesho!</h1> 
+       <p>Your one-stop destination for all shopping needs.</p> 
+   </div> 
+</body> 
+</html>
