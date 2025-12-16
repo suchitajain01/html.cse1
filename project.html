@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial scale = 1.0">
+    <title>E commerce web page"</title>
+</head>
+
+<style>
+    body {
+        width: 1000px;
+        height: 1000px;
+        background-color: rgb(183, 205, 223);
+      
+        
+    }
+
+
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+        background: #bcc0e0;
+    }
+
+    .brand {
+        font-size: 28px;
+        font-weight: 700;
+        font-style: italic;
+        color: #010213;
+
+    }
+
+     .nav {
+        height: 40px;
+        width: 80%;
+        background-color: rgba(209, 218, 218, 0.3)
+    }
+
+    .nav ul {
+        list-style: none;
+        display: flex;
+        gap: 70px;
+
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: #080707;
+
+
+
+    }
+
+    nav ul li a:hover {
+        color: #851818;
+    }
+
+    /*main PRODUCT SECTION */
+    .product-container {
+        padding: 90px;
+    }
+
+    .product-card img {
+        height: auto;
+        border-radius: 30px;
+        margin: 20px;
+        box-shadow: 10px 15px 40px rgb(49, 199, 219,0.8);
+        display:flex;
+        
+    }
+
+    .detail h1 {
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size:x-large;
+        color:#3f3fc5;
+
+    }
+
+    .detail p {
+
+        font-size: 16px;
+        line-height: 1.6;
+        color: rgb(0, 0, 0);
+    }
+
+    .btn {
+        padding: 10px 23px;
+        border-radius: 15px;
+        border: none;
+        font-size: 15px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+
+    .primary {
+        background: #c9cae5;
+        color: #070817;
+    }
+
+    .secondary {
+        background: #c9cae5;
+        color: #070817;
+    }
+
+
+
+    /* Review card */
+    .review-card {
+       
+        height: auto;
+        background: #b5c8dc;
+    }
+
+    .review-card h4 {
+        
+        margin: 50px;
+        font-size: 20px;
+        font-style: italic;
+        color: rgb(7, 2, 15);
+
+    }
+
+    .review-card p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #040405;
+        margin-bottom: 15px;
+    }
+
+    .review span {
+        color: #a03131;
+        font-size: 18px;
+    }
+
+    .review strong {
+        margin-left: 10px;
+    }
+
+
+    .discount-badge {
+        background: #b3bdd5;
+        color: #000000;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .product-card-img {
+
+        width: 100px;
+        margin-bottom: 50px;
+        justify-content:right;
+        align-items:right;
+
+    }
+
+    .product-card p {
+        font-weight: 50px;
+
+    }
+
+    .product-strip {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .thumb {
+        
+        background:#b5d0db;
+        padding: 10px;
+        border-radius: 12px;
+        width: 150px;
+        box-shadow: 10px 20px 25px #93b6d5;
+        gap:40px;
+
+    }
+
+    .thumb img {
+        
+        flex-direction: row;
+        width: 80%;
+        border-radius: 10px;
+        border-style:solid;
+       
+
+    }
+
+    .thumb span {
+        font-size: 20px;
+    }
+
+   .get-brands {
+    margin: 50px 60px;
+    padding: 40px;
+    background: #b5c4d1;
+    text-align: center;
+}
+
+
+    .hero h1 {
+        font-size: 32px;
+        margin-bottom: 60px;
+
+    }
+
+    .btn-secondary {
+        background: #a6a7ba;
+
+    }
+
+
+ 
+    /*FOOTER SECTION */ 
+    .footer {
+
+    display: flex;                /* REQUIRED */
+    flex-direction: column;       /* stack content */
+    align-items: center;          /* horizontal center */
+    text-align: center;
+        padding: 50px 60px;
+        color: #8989bc;
+        margin-top:5px;
+    }
+
+    .footer span {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #5561e7;
+        font-style:italic;
+    }
+
+    .footer-links h4 {
+        margin-bottom: 8px;
+    }
+
+    .footer a {
+
+        display:inline;
+        color: #534bcc;
+        margin-bottom: 10px;
+        gap:610px;
+        justify-content:center;
+
+        
+
+    }
+
+    .footer-links a:hover {
+
+        color: #cb5478;
+
+    }
+
+    
+</style>
+
+
+<body>
+    <header class="site-header">
+
+        <div class="brand">ShopEasy </div>
+
+        <nav class="nav">
+            <ul>
+
+                <li><a href="#index.html">Home</a> </li>
+                <li><a href="#>">Categories</a></li>
+                <li><a href="#">Product</li><a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href='#'>Reviews</a></li>
+            </ul>
+
+            <main class="product-container">
+                <section class="product-card">
+
+                    <div class="detail">
+
+                        <h1>Collection of Glow</h1>
+                        <p>
+                            Celebrate your individuality and shine with confidence because beauty isn't just seen it's
+                            truly
+                            felt
+                        </p>
+
+                        <button class="btn primary"> Shop now</button>
+                        <button class="btn secondary">Top product </button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaxbQGzvrEXetN3TMMeVmHA-p-zkpw605oUQ&s"
+                            alt=product>
+                    </div>
+
+                     <div class="right">
+                        <div class="discount-badge">
+                            <strong>20% Discount</strong>
+                            <span>Clients Order</span>
+                        </div>
+
+
+                   
+
+                         <div class="product-strip">
+                                <div class="thumb">
+                                    <img src="https://luxplus.imgix.net/content/product/image/94366-84069-1674122356.jpg?auto=format,compress&w=800&h=800&fill-color=FFFFFF&fill=solid&fit=fillmax"
+                                        <span>Face Serum<br>$35</span>
+                                </div>
+
+                                <div class="thumb">
+                                    <img
+                                        src="https://media.istockphoto.com/id/1462119292/photo/happy-with-her-skincare-routine-woman-in-her-20s-applies-beauty-cream-on-her-face.jpg?s=612x612&w=0&k=20&c=0Jbte1lX7A6fd_k240B4va4CBUdW1CwQ5VoFhiWS0k4=">
+                                </div>
+                            </div>  
+
+                            
+
+
+                        <div class="review-card">
+                            <h4>Quality with care!</h4>
+                            <p>
+                                Absolutely love how this brand blends quality with care.<br>
+                                The products feel gentle yet effective.<br>
+                                Finally focused a beauty brand i can trust_highly recommended.
+                            </p>
+
+                            <div class="review">
+                                <span>★★★★★</span>
+                                <strong>Sara</strong>
+                            </div>
+
+
+
+
+                           
+
+
+                                
+
+
+                                    <section class="get-brands">
+                                        <h1>
+                                            Experience the Difference for Yourself –<br />
+                                            Try and Buy Our Products Today!
+                                        </h1>
+                                        <button class="btn-secondary">Shop Now</button>
+                                    </section>
+
+
+
+                                    <footer class="footer">
+                                        <div>
+                                            <h2>Treat Your<br>Skin with Love</h2>
+                                            <span class="brand">DREAMBLISS</span>
+                                        </div>
+
+                                            <div class = "footer-links">
+                                                <h4>Discover</h4>
+                                                <a href="#">Home ||</a>
+                                                <a href="#">Product ||</a>
+                                                <a href="#">Store</a>
+                                            
+                                                <h4>About Us</h4>
+                                                <a href="#">Contact ||</a>
+                                                <a href="#">FAQs ||</a>
+                                                <a href="#">Terms & Conditions</a>
+                                            </div>
+                                        </footer>
+
+                                        
+                                    </footer>
+
+</body>
+
+</html>
+
+
+
+
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+</body>
+
+</html>
